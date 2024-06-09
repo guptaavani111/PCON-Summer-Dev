@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Match Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container" id="level-selection-container">
+        <header>
+            <h1>Memory Match Game</h1>
+            <button id="level-1-button">Level 1</button>
+            <button id="level-2-button">Level 2</button>
+        </header>
+    </div>
+    <div class="container hidden" id="game-container">
+        <header>
+            <h1>Memory Match Game</h1>
+            <button id="start-button">Start Game</button>
+        </header>
+        <div class="game-board" id="game-board"></div>
+        <footer>
+            <ul id="leaderboard">
+                <p class="leaderboard-header" id="leaderboard-header">LEADERBOARD</p>
+                <p class="top-players" id="top-players">Top Players:</p>
+            </ul>
+        </footer>
+        <div id="timer">Time: 0s</div>
+    </div>
+    <div class="container hidden" id="win-container">
+        <h1>YOU WON!</h1>
+        <div id="easter-egg"></div>
+        <button id="play-again-button">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

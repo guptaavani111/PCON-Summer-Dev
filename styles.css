@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eed3f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#start-button{
+    border: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+#start-button:hover{
+    cursor:pointer;
+    color:#f2f6ee;
+    background-color: #087e8b;
+}
+
+.container {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.leaderboard-header{
+    color: black;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.top-players{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.game-board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #bc59c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2em;
+    transition: transform 0.6s;
+}
+
+.card.flipped {
+    background-color: #fff;
+}
+
+.card.rotate .flipped {
+    transform: rotateY(180deg);
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#leaderboard {
+    list-style: none;
+    padding: 10px;
+    background: #9ea00bc3;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    margin: 20px auto;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#leaderboard li {
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#leaderboard li:last-child {
+    border-bottom: none;
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#easter-egg {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #ffd700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(2, 100px);
+    }
+
+    #leaderboard {
+        position: static;
+        transform: none;
+        width: 90%;
+        margin: 10px auto 20px;
+    }
+}
+
+#level-1-button{
+    color:black;
+    border: 1px solid rgb(59, 53, 59);
+    margin: 2vmax;
+    padding: 2%;
+    font-size: medium;
+}
+
+
+#level-2-button{
+    color:black;
+    border: 1px solid rgb(59, 53, 59);
+    margin: 2vmax;
+    padding: 2%;
+    font-size: medium;
+}
+
+#level-1-button:hover{
+    color:white;
+    cursor:grab;
+    background-color: #e9eb87;
+}
+
+#level-2-button:hover{
+    color:white;
+    cursor:grab;
+    background-color: #92940dea;
+}
+
+#play-again-button{
+    cursor:pointer;
+    color:#f2f6ee;
+    background-color: #087e8b;
+
+}
